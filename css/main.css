@@ -3,22 +3,138 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: white;
+  height: 600px;
 }
 
+h3 {
+  float: left;
+  margin-right: 206px;
+}
 
+h4 {
+  margin-bottom: 5px;
+  border-top: solid 1px #72587F;
+}
 /* Layout */
 .weather {
   width: 320px;
   height: 568px;
-  background: url(../img/clear-skies.jpg) 0 0 no-repeat;
+  background: url(../img/thunderstorm.jpg);
   margin: 100px auto;
 }
 
 .group {
   padding: 15px;
-  border-bottom: 1px solid #b1dafa;
+  border-bottom: 1px solid #72587F;
+
 }
 
+.hours.group {
+  border-bottom: none;
+}
+
+.week.group {
+  border-bottom: none;
+}
+
+.hours.group {
+  clear: both;
+  float: left;
+  padding-bottom: 0px;
+}
+
+.hour.current.rain, .hour.cloudy, .hour.rain, .hour {
+  float: left;
+  margin: 0px 14px 0px 14px;
+  text-align: center;
+  height: 70px;
+}
+.hour.current.rain, .hour.cloudy, .hour.rain, .hour h4 {
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #72587F;
+}
+
+.hour.current.rain, .hour.rain {
+  background: url(../img/icon_rain.png) 0 0 no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 0px;
+}
+
+.hour.cloudy {
+  background: url(../img/icon_cloudy.png) 0 0 no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 0px;
+}
+
+.hour {
+  background: url(../img/icon_sunny.png) 0 0 no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 0px;
+}
+
+
+
+.week.group {
+  clear: both;
+  position: relative;top: -30px;
+
+}
+
+.day h4 {
+  margin-right: 146px;
+  margin-bottom: 10px;
+  float: left;
+  width: 60px;
+}
+
+.day.rain h4 {
+  margin-right: 146px;
+  float: left;
+  margin-bottom: 10px;
+  width: 60px;
+}
+
+.day.cloudy h4 {
+  margin-right: 146px;
+  float: left;
+  margin-bottom: 10px;
+  width: 60px;
+  padding-top: 0px;
+}
+
+.day.rain, .day.cloudy, .day {
+  clear: both;
+  margin-bottom: 10px;
+  height: 25px;
+}
+
+.day.rain {
+  background: url(../img/icon_rain.png) 0 0 no-repeat;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.day.cloudy {
+  background: url(../img/icon_cloudy.png) 0 0 no-repeat;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.day {
+  background: url(../img/icon_sunny.png) 0 0 no-repeat;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
 /* Now */
 .now {
   padding: 60px 0 30px 0;
@@ -33,3 +149,9 @@ body {
 .now h2 {
   font-size: 72px;
 }
+
+.now h3 {
+  margin-left: 136px;
+}
+
+
